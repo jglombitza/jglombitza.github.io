@@ -165,7 +165,7 @@
     .text {
 		color: #414f57;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 1em;
+		font-size: 1.2em; /* Change Fontsize */
 		font-weight: normal;
 		line-height: 1.5;
 		letter-spacing: normal;
@@ -173,6 +173,14 @@
         text-align: justify;
         margin: 0 0 0.5em 0;
     }
+
+	@media screen and (max-width: 560px) {
+
+		.text {
+			font-size: 1.05em; /* Change Fontsize Mobile */
+		}
+
+	}
 
     .author {
 		color: #414f57;
@@ -333,15 +341,15 @@
 	}
 
 	h2 {
-		font-size: 1.25em;
+		font-size: 1.5em;
 	}
 
 	h3 {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 
 	h4 {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 
 	h5 {
@@ -355,9 +363,20 @@
 	@media screen and (max-width: 560px) {
 
 		h1 {
-			font-size: 1.65em;
+			font-size: 1.4em;
 		}
 
+		h2 {
+			font-size: 1.2em;
+		}
+
+		h3 {
+			font-size: 1.1em;
+		}
+
+		h4 {
+			font-size: 1.05em;
+		}
 	}
 
 	sub {
@@ -1056,10 +1075,10 @@
 }
 
 .forstart{
-        -moz-transition: opacity 1.0s ease, -moz-transform 1.5s ease;
-		-webkit-transition: opacity 1.0s ease, -webkit-transform 1.5s ease;
-		-ms-transition: opacity 1.0s ease, -ms-transform 1.5s ease;
-		transition: opacity 1.0s ease, transform 1.5s ease;
+        -moz-transition: opacity 1.5s ease, -moz-transform 1.5s ease;
+		-webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+		-ms-transition: opacity 1.5s ease, -ms-transform 1.5s ease;
+		transition: opacity 1.5s ease, transform 1.5s ease;
         -moz-transition-delay: 0.20s;
 		-webkit-transition-delay: 0.20s;
         -ms-transition-delay: 0.20s;
@@ -1075,12 +1094,12 @@
 		-webkit-transform-origin: 50% 50%;
 		-ms-transform-origin: 50% 50%;
 		transform-origin: 50% 50%;
-		padding: 1em 3em 3em 3em;
+		padding: 2em 4em 4em 4em;
 		background: #ffffff;
 		border-radius: 20px;
 		cursor: default;
 		max-width: 100%;
-		opacity: 0.95;
+		opacity: 0.93;
 		position: center;
         display: flex;
         flex-direction: column;
@@ -1088,7 +1107,7 @@
         align-items: center;
         margin: auto;
 		text-align: center;
-		width: 40em;
+		width: 65em; /* Change Width of page */
 	}
 
 		.main .avatar {
@@ -1118,7 +1137,7 @@
 		@media screen and (max-width: 560px) {
 
 			.main {
-				padding: 4em 2em 2.5em 2em ;
+				padding: 1em 2em 2.5em 2em ; /* padding for box */ 
 				width: 100%;
 			}
 
@@ -1158,7 +1177,7 @@
         align-items: center;
         margin: auto;
 		text-align: center;
-		width: 40em;
+		width: 65em;
 	}
 
 		.more .avatar {
@@ -1188,7 +1207,7 @@
 		@media screen and (max-width: 560px) {
 
 			.more {
-				padding: 4em 2em 2.5em 2em ;
+				padding: 1em 2em 2.5em 2em ;
 				width: 100%;
 			}
 
@@ -1238,7 +1257,7 @@
         align-items: center;
         margin: auto;
 		text-align: center;
-		width: 40em;
+		width: 65em;
 	}
 
 		.work .avatar {
@@ -1268,7 +1287,7 @@
 		@media screen and (max-width: 560px) {
 
 			.work {
-				padding: 4em 2em 2.5em 2em ;
+				padding: 1em 2em 2.5em 2em ;
 				width: 100%;
 			}
 
@@ -1308,7 +1327,7 @@
         align-items: center;
         margin: auto;
 		text-align: left;
-		width: 40em;
+		width: 65em;
 	}
 
 
@@ -1339,7 +1358,7 @@
 		@media screen and (max-width: 560px) {
 
 			.cv {
-				padding: 4em 2em 2.5em 2em ;
+				padding: 1em 2em 2.5em 2em ;
 				width: 100%;
 			}
 
@@ -1377,7 +1396,7 @@
         align-items: center;
         margin: auto;
 		text-align: left;
-		width: 40em;
+		width: 65em;
 	}
 
 
@@ -1408,7 +1427,7 @@
 		@media screen and (max-width: 560px) {
 
 			.talks {
-				padding: 4em 2em 2.5em 2em ;
+				padding: 1em 2em 2.5em 2em ;
 				width: 100%;
 			}
 
@@ -1444,7 +1463,7 @@
         align-items: center;
         margin: auto;
 		text-align: left;
-		width: 40em;
+		width: 65em;
 	}
 
 		.basics .avatar {
@@ -1474,7 +1493,7 @@
 		@media screen and (max-width: 560px) {
 
 			.basics {
-				padding: 4em 2em 2.5em 2em ;
+				padding: 1em 2em 2.5em 2em ;
 				width: 100%;
 			}
 
@@ -1511,7 +1530,7 @@
         align-items: center;
         margin: auto;
 		text-align: left;
-		width: 40em;
+		width: 65em;
 	}
 
 
@@ -1542,7 +1561,7 @@
 		@media screen and (max-width: 560px) {
 
 			.publications {
-				padding: 4em 2em 2.5em 2em ;
+				padding: 1em 2em 2.5em 2em ;
 				width: 100%;
 			}
 
@@ -1579,7 +1598,7 @@
         align-items: center;
         margin: auto;
 		text-align: left;
-		width: 40em;
+		width: 65em;
 	}
 
 
@@ -1610,7 +1629,7 @@
 		@media screen and (max-width: 560px) {
 
 			.teaching {
-				padding: 4em 2em 2.5em 2em ;
+				padding: 1em 2em 2.5em 2em ;
 				width: 100%;
 			}
 
@@ -1647,7 +1666,7 @@
         align-items: center;
         margin: auto;
 		text-align: left;
-		width: 40em;
+		width: 65em;
 	}
 
 
@@ -1678,7 +1697,7 @@
 		@media screen and (max-width: 560px) {
 
 			.aboutme {
-				padding: 4em 2em 2.5em 2em ;
+				padding: 1em 2em 2.5em 2em ;
 				width: 100%;
 			}
 
@@ -1994,13 +2013,13 @@
 
 				.header nav ul li a {
 					display: block;
-					min-width: 9.5em;
+					min-width: 12.5em; /* Change button width here (Navigation bar) */
 					min-height: 2.75em;
 					line-height: 2.75em;
-					padding: 1 1.25em 0 1.45em;
+					padding: 0em 1.25em 0em 1.45em;
 					text-transform: uppercase;
 					letter-spacing: 0.2em;
-					font-size: 1em;
+					font-size: 1.2em;
 					border-bottom: 0;
                     border:  0em #c8cccf;
                     border-radius: 0.2em;
@@ -2013,7 +2032,14 @@
 					.header nav ul li a:active {
 						background-color: rgba(0, 0, 0, 0.75);
 					}
+					@media screen and (max-width: 980px) {
 
+						.header nav ul li a{
+							font-size: 1em;
+							min-width: 6.8em; /* Change button width here (Navigation bar) */
+						}
+			
+					}
 		.subheader nav ul {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -2043,19 +2069,28 @@
 				}
 
 				.subheader nav ul li a {
+					/* Change sub (second / small) navigation bar*/
 					display: block;
-					min-width: 6.5em;
-					min-height: 1.5em;
+					min-width: 10em;
+					min-height: 2em;
 					line-height: 1.5em;
 					padding: 0.2em 0.2em 0.2em 0.2em;
 					text-transform: None;
 					letter-spacing: 0.1em;
-					font-size: 1em;
+					font-size: 1.075em;
 					border-bottom: 0;
                     border:  0em #c8cccf;
-                    border-radius: 0.2em;                    
+                    border-radius: 0.0em;                    
 				}
+				@media screen and (max-width: 980px) {
 
+					.subheader nav ul li a{
+						font-size: 1.01em;
+						min-height: 1.2em;
+						min-width: 6.8em; /* Change button width here (Navigation bar) */
+					}
+		
+				}
 					.subheader nav ul li a:hover {
 						background-color: rgba(0, 0, 0, 0.25);
                         
