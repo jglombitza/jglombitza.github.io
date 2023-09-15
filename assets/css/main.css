@@ -153,6 +153,7 @@
 
 /* Type */
 
+
 	body, input, select, textarea {
 		color: #414f57;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -175,13 +176,7 @@
         margin: 0 0 0.5em 0;
     }
 
-	@media screen and (max-width: 560px) {
 
-		.text {
-			font-size: 1.05em; /* Change Fontsize Mobile */
-		}
-
-	}
 
     .author {
 		color: #414f57;
@@ -361,24 +356,6 @@
 		font-size: 1em;
 	}
 
-	@media screen and (max-width: 560px) {
-
-		h1 {
-			font-size: 1.4em;
-		}
-
-		h2 {
-			font-size: 1.2em;
-		}
-
-		h3 {
-			font-size: 1.1em;
-		}
-
-		h4 {
-			font-size: 1.05em;
-		}
-	}
 
 	sub {
 		font-size: 0.8em;
@@ -2078,8 +2055,15 @@
                     border-radius: 0.0em;                    
 				}
 
+				.fonts {
+					font-size: 1.25em;
+				}
 
 				@media screen and (max-width: 980px) {
+
+					.fonts {
+						font-size: 1.2em;
+					}
 
 					.header nav ul li a{
 						font-size: 1.1em;
@@ -2103,9 +2087,32 @@
 
 				}
 
-
 				@media screen and (max-width: 560px) {
 
+					h1 {
+						font-size: 1.4em;
+					}
+			
+					h2 {
+						font-size: 1.2em;
+					}
+			
+					h3 {
+						font-size: 1.1em;
+					}
+			
+					h4 {
+						font-size: 1.05em;
+					}
+
+					.text {
+						font-size: 1.05em; /* Change Fontsize Mobile */
+					}
+
+					.fonts {
+						font-size: 1.1em;
+					}					
+			
 					.header nav ul li a{
 						font-size: 0.9em;
 						min-width: 5.4em; /* Change mobile button width here (Navigation bar) */
